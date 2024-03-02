@@ -1,0 +1,154 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+:root
+{
+    --main-color:#0aad0a;
+    --light-color:#f0f3f2;
+    --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+    --font-family:'Encode Sans Expanded', sans-serif;
+    --rating-color:#ffc908;
+}
+
+body{
+    font-family: var(--font-family) !important;
+}
+.rating-color
+{
+    color: var(--rating-color);
+}
+.cursor-pointer
+{
+    cursor: pointer;
+}
+a , a:hover{
+    color: black;
+    text-decoration: none;
+}
+.product:hover
+{
+    box-shadow: var(--shadow);
+    border: solid 1px var(--main-color);
+    border-radius: 15px;
+}
+.product .btn 
+{
+    transition: transform 1s , opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.product:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+
+}
+.font-sm
+{
+    font-size: 14px;
+}
+.text-main
+{
+    color: var(--main-color);
+}
+.bg-main
+{
+    background-color: var(--main-color) !important;
+}
+.bg-main-light 
+{
+    background-color: var(--light-color) !important;
+}
+
+.loading{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 33333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+.imgslider{
+    height: 400px;
+}
+.img{
+    height: 200px;
+}
+
+.offline{
+    z-index: 9999999;
+}
+
+.loadingCard{
+    z-index: 9999999;
+background-color: white; 
+position: fixed;
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 50px;
+}
+
+.cart{
+    margin-top: 100px;
+}
+
+.productt{
+    margin-top: 70px;
+}
+.cat{
+    margin-top: 100px;
+}
+
+.navv{
+    margin-bottom: 90px;
+}
+
+.dataOrder{
+    background-color: #f0f3f2;
+}
+
+.price{
+    background-color: blanchedalmond;
+}
+
+.itemSub{
+    background-color: #53cca4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.4s;
+    
+}
+
+.itemSub:hover{
+    transform: scale(1.1);
+}
+
+.apple{
+    width: 100px;
+}
+
+
+
+.productBr:hover{
+    box-shadow: #0aad0a 1px 1px 10px 1px;
+    transform: scale(1.05);
+   border-radius: 15px;
+}
+
+
+@media (max-width :992px){
+.navv .nav-item{
+    margin: 10px ;
+}
+} 
